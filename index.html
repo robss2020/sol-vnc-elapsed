@@ -71,6 +71,33 @@
       font-size: clamp(2rem, 9vw, 6rem);
       letter-spacing: -0.055em;
     }
+
+    .frames {
+      margin-top: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .frame {
+      margin: 0;
+    }
+
+    .frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #1c2128;
+      border-radius: 8px;
+    }
+
+    .frame figcaption {
+      margin-top: 0.6rem;
+      color: #ff5d6c;
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(0.85rem, 2.2vw, 1.15rem);
+      overflow-wrap: anywhere;
+    }
   </style>
 </head>
 <body>
@@ -92,6 +119,11 @@
 
     <p class="marker">It's now been:</p>
     <time id="elapsed">000:00:00:00.000</time>
+
+    <section class="frames" id="frames">
+      <!-- FRAMES:START -->
+      <!-- FRAMES:END -->
+    </section>
   </main>
   <script>
     const startedAt = Date.parse("2026-08-09T20:14:12+02:00");
