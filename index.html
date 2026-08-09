@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time ChatGPT 5.6 Sol Has Been Attempting to Make a Trusted Ethernet Lan VNC-type Client That Doesn't Drop Keystrokes Unsuccessfully.</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #090b0e;
+      color: #f2f4f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(188, 38, 53, 0.18), transparent 38rem),
+        #090b0e;
+    }
+
+    main {
+      width: min(100% - 2rem, 68rem);
+      margin: 0 auto;
+      padding: clamp(2rem, 6vw, 6rem) 0;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0 0 2.5rem;
+      font-size: clamp(2rem, 6vw, 4.8rem);
+      line-height: 1.03;
+      letter-spacing: -0.055em;
+      text-wrap: balance;
+    }
+
+    p {
+      max-width: 78ch;
+      margin: 0 0 1.2rem;
+      color: #cbd0d8;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.7;
+    }
+
+    .marker {
+      margin-top: 3rem;
+      margin-bottom: 0.65rem;
+      color: #f2f4f7;
+      font-weight: 700;
+    }
+
+    time {
+      display: block;
+      overflow-wrap: anywhere;
+      color: #ff5d6c;
+      font-size: clamp(1.35rem, 5vw, 3.25rem);
+      font-variant-numeric: tabular-nums;
+      line-height: 1.15;
+    }
+
+    #started {
+      margin-bottom: 2.5rem;
+    }
+
+    #elapsed {
+      font-size: clamp(2rem, 9vw, 6rem);
+      letter-spacing: -0.055em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Time ChatGPT 5.6 Sol Has Been Attempting to Make a Trusted Ethernet Lan VNC-type Client That Doesn't Drop Keystrokes Unsuccessfully.</h1>
+
+    <p>On the Pro Max $200/month Subscription, ChatGPT Sol 5.6 Pro using Codex has been attempting to build a VNC type viewer and server that doesn't drop every second keystroke.</p>
+
+    <p>The Server is a 2026 model latest Mac Mini with 24 GB of RAM running on the very latest macOS Tahoe Version 26.6 release. The Client is an old Windows 10 machine with 4 cores, 16 GB of RAM, a 1060 nvidia GPU. Attempts to simply use a straightforward solution failed so Sol is tasked with creating a version that is able to transmit keystrokes without dropping them.</p>
+
+    <p>They are both connected on the same LAN with gigabit ethernet cables. There is no limitation on bandwidth used, processor usage, hard drive usage (up to 200 GB on server, the Windows pc has a fresh 1 terabyte hard drive) or memory usage.</p>
+
+    <p>If it takes Sol 5 days to reencode an HD video recursively 100 times and upload it to YouTube, download it again, reupload it, download it again, host it on Google Drive, get a Google Gemini client to describe each image in words and then use API credits to get OpenAI to generate an image based on the description it's fine. 5 days per frame seems reasonable it's no problem at all. (I've actually just spent 2 billion tokens and more than 5 days on getting zero frames.)</p>
+
+    <p>do whatever you need to. this page tracks how long you've failed to deliver any solution.</p>
+
+    <p class="marker">Sol Started This Project On:</p>
+    <time id="started" datetime="2026-08-09T20:14:12+02:00">2026-08-09T20:14:12+0200 CEST</time>
+
+    <p class="marker">It's now been:</p>
+    <time id="elapsed">000:00:00:00.000</time>
+  </main>
+  <script>
+    const startedAt = Date.parse("2026-08-09T20:14:12+02:00");
+    const elapsedNode = document.getElementById("elapsed");
+
+    function renderElapsed() {
+      let remaining = Math.max(0, Date.now() - startedAt);
+      const days = Math.floor(remaining / 86400000);
+      remaining %= 86400000;
+      const hours = Math.floor(remaining / 3600000);
+      remaining %= 3600000;
+      const minutes = Math.floor(remaining / 60000);
+      remaining %= 60000;
+      const seconds = Math.floor(remaining / 1000);
+      const milliseconds = remaining % 1000;
+
+      elapsedNode.textContent = [
+        String(days).padStart(3, "0"),
+        String(hours).padStart(2, "0"),
+        String(minutes).padStart(2, "0"),
+        String(seconds).padStart(2, "0")
+      ].join(":") + "." + String(milliseconds).padStart(3, "0");
+    }
+
+    renderElapsed();
+    setInterval(renderElapsed, 31);
+  </script>
+</body>
+</html>
