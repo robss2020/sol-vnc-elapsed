@@ -142,7 +142,7 @@
     <time id="started" datetime="2026-08-09T20:14:12+02:00">2026-08-09T20:14:12+0200 CEST</time>
 
     <p class="marker">It's now been:</p>
-    <time id="elapsed">000:00:00:00.000</time>
+    <time id="elapsed">002:03:12:08.000</time>
 
     <p class="marker">Project completed time:</p>
     <time datetime="2026-08-11T23:26:20+02:00">2026-08-11T23:26:20+0200 CEST</time>
@@ -153,7 +153,7 @@
     <p class="marker">Proof of project completion:</p>
     <p><a href="https://youtube.com/shorts/D5BKi--LEfk">https://youtube.com/shorts/D5BKi--LEfk</a></p>
 
-    <p>We publicly tracked this project to get it to completion, after two earlier attempts failed.  Finally, after threatening a congressional report about the matter, the project was completed appropriately. This issue is now resolved and the software has been built. I'm typing on it right now (well, not exactly. After I already tested it and everything was working, the keystrokes were changes to be gibberish, so I have to use a bluetooth keyboard.  However, I don't feel like writing a congressional report over this matter so even though technically speaking we're still not able to get a single byte across the network, it's good enough for me.</p>
+    <p>We publicly tracked this project to get it to completion, after two earlier attempts failed.  Finally, after threatening a congressional report about the matter, the project was completed appropriately. This issue is now resolved and the software has been built. I'm typing on it right now (well, not exactly. After I already tested it and everything was working, the keystrokes were changed to be gibberish, so I have to use a bluetooth keyboard.  However, I don't feel like writing a congressional report over this matter so even though technically speaking we're still not able to get a single byte across the network, it's good enough for me.</p>
 
     <section class="frames" id="frames">
       <!-- FRAMES:START -->
@@ -508,31 +508,5 @@
       <!-- FRAMES:END -->
     </section>
   </main>
-  <script>
-    const startedAt = Date.parse("2026-08-09T20:14:12+02:00");
-    const elapsedNode = document.getElementById("elapsed");
-
-    function renderElapsed() {
-      let remaining = Math.max(0, Date.now() - startedAt);
-      const days = Math.floor(remaining / 86400000);
-      remaining %= 86400000;
-      const hours = Math.floor(remaining / 3600000);
-      remaining %= 3600000;
-      const minutes = Math.floor(remaining / 60000);
-      remaining %= 60000;
-      const seconds = Math.floor(remaining / 1000);
-      const milliseconds = remaining % 1000;
-
-      elapsedNode.textContent = [
-        String(days).padStart(3, "0"),
-        String(hours).padStart(2, "0"),
-        String(minutes).padStart(2, "0"),
-        String(seconds).padStart(2, "0")
-      ].join(":") + "." + String(milliseconds).padStart(3, "0");
-    }
-
-    renderElapsed();
-    setInterval(renderElapsed, 31);
-  </script>
 </body>
 </html>
